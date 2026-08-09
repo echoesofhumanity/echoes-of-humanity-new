@@ -103,3 +103,67 @@ nav a:hover {
         font-size: 0.9rem;
     }
 }
+/* --- Globe Language Dropdown Styles --- */
+.language-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.globe-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.globe-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+
+.language-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #0f172a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    z-index: 1001;
+    overflow: hidden;
+}
+
+.language-dropdown-content.show {
+    display: block;
+}
+
+.language-dropdown-content a {
+    color: #cbd5e1;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.language-dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.language-dropdown-content .flag {
+    font-size: 1.1rem;
+    }
+
