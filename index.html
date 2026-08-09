@@ -145,14 +145,34 @@
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
     <script>
+        // Hamburger menü için mevcut kodun
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav');
         if (menuToggle && nav) {
             menuToggle.addEventListener('click', () => nav.classList.toggle('active'));
         }
+
+        // Küre dil menüsü için garantili açma/kapama fonksiyonu
+        function toggleLanguageMenu() {
+            const menu = document.getElementById('languageMenu');
+            if (menu) {
+                menu.classList.toggle('show');
+            }
+        }
+
+        // Sayfada boş bir yere tıklandığında menüyü kapatma
+        window.addEventListener('click', function(e) {
+            if (!e.target.closest('.language-dropdown-container')) {
+                const menu = document.getElementById('languageMenu');
+                if (menu && menu.classList.contains('show')) {
+                    menu.classList.remove('show');
+                }
+            }
+        });
     </script>
+    
 </body>
 </html>
     
