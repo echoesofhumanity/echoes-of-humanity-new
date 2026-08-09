@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="nav.home">Echoes of Humanity | Home</title>
+    
+    <!-- CSS Bağlantıları -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+                <h1 data-i18n="nav.home">Echoes of Humanity</h1>
+                
+                <div class="language-switcher">
+                    <button onclick="loadLanguage('en')">EN</button>
+                    <button onclick="loadLanguage('tr')">TR</button>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="about.html" data-i18n="nav.about">About</a>
+                <a href="vision.html" data-i18n="nav.vision">Vision</a>
+                <a href="mission.html" data-i18n="nav.mission">Mission</a>
+                <a href="humanitarian-action.html" data-i18n="nav.humanitarian">Humanitarian Action</a>
+                <a href="manifesto.html" data-i18n="nav.manifesto">Manifesto</a>
+                <a href="projects.html" data-i18n="nav.projects">Projects</a>
+                <a href="volunteers.html" data-i18n="nav.volunteers">Volunteers</a>
+                <a href="academy.html" data-i18n="nav.academy">Academy</a>
+                <a href="marketplace.html" data-i18n="nav.marketplace">Marketplace</a>
+                <a href="merchandise.html" data-i18n="nav.merchandise">Merchandise</a>
+                <a href="media-network.html" data-i18n="nav.media">Media</a>
+                <a href="partners.html" data-i18n="nav.partners">Partners</a>
+                <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 data-i18n="hero.title">One World.<br>One Shared Humanity.<br>Millions of Opportunities to Create Hope.</h2>
+            <p data-i18n="hero.description">Echoes of Humanity is a global humanitarian movement that connects people, compassion, knowledge, and technology to bring people together and bring lasting solutions to the world's challenges.</p>
+            
+            <div class="hero-btns">
+                <a href="humanitarian-action.html" class="btn" data-i18n="hero.join">Join the Movement</a>
+                <a href="mission.html" class="btn btn-secondary" data-i18n="hero.explore">Explore Our Mission</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3 data-i18n="nav.home">Echoes of Humanity</h3>
+            <p>Building Humanity Together.<br>Connecting people, ideas and action to create lasting humanitarian impact.</p>
+            <p>&copy; 2026 Echoes of Humanity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bağlantısı -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Mobil Menü Toggle Entegrasyonu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        if (menuToggle && nav) {
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
+
