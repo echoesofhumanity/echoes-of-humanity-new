@@ -34,4 +34,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('selectedLanguage') || 'en';
     loadLanguage(savedLang);
 });
+// Küre menüsünü açıp kapama fonksiyonu
+function toggleLanguageMenu() {
+    const menu = document.getElementById('languageMenu');
+    if (menu) {
+        menu.classList.toggle('show');
+    }
+}
+
+// Sayfanın herhangi bir boş yerine tıklandığında açık olan dil menüsünü kapatma
+window.addEventListener('click', function(e) {
+    if (!e.target.closest('.language-dropdown-container')) {
+        const menu = document.getElementById('languageMenu');
+        if (menu && menu.classList.contains('show')) {
+            menu.classList.remove('show');
+        }
+    }
+});
+
+// Dil değiştirme fonksiyonu
+function changeLanguage(lang) {
+    if (typeof loadLanguage === 'function') {
+        loadLanguage(lang);
+    }
+    toggleLanguageMenu();
+}
 
