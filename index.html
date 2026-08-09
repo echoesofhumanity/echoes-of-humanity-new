@@ -8,34 +8,47 @@
     <link rel="stylesheet" href="assets/css/navigation.css">
 </head>
 <body>
-            <header>
+                <header>
         <div class="container">
             <div class="header-top">
                 <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                 <h1>Echoes of Humanity</h1>
-                <div class="language-switcher">
-                    <button onclick="loadLanguage('en')">EN</button>
-                    <button onclick="loadLanguage('tr')">TR</button>
+                
+                <!-- Küre Simgeli Gelişmiş Dil Seçici -->
+                <div class="language-dropdown-container">
+                    <button class="globe-btn" onclick="toggleLanguageMenu()" aria-label="Language Selector">
+                        🌐
+                    </button>
+                    <div id="languageMenu" class="language-dropdown-content">
+                        <a href="#" onclick="changeLanguage('tr'); return false;">
+                            <span class="flag">🇹🇷</span> Türkçe
+                        </a>
+                        <a href="#" onclick="changeLanguage('en'); return false;">
+                            <span class="flag">🇬🇧</span> English
+                        </a>
+                        <!-- İleride eklenecek diller buraya kolayca eklenebilir -->
+                    </div>
                 </div>
+
             </div>
             <nav>
-                <a href="index.html" data-i18n="nav.home">Home</a>
-                <a href="about.html" data-i18n="nav.about">About</a>
-                <a href="vision.html" data-i18n="nav.vision">Vision</a>
-                <a href="mission.html" data-i18n="nav.mission">Mission</a>
-                <a href="humanitarian-action.html" data-i18n="nav.humanitarian">Humanitarian Action</a>
-                <a href="manifesto.html" data-i18n="nav.manifesto">Manifesto</a>
-                <a href="projects.html" data-i18n="nav.projects">Projects</a>
-                <a href="volunteers.html" data-i18n="nav.volunteers">Volunteers</a>
-                <a href="academy.html" data-i18n="nav.academy">Academy</a>
-                <a href="marketplace.html" data-i18n="nav.marketplace">Marketplace</a>
-                <a href="merchandise.html" data-i18n="nav.merchandise">Merchandise</a>
-                <a href="media-network.html" data-i18n="nav.media">Media</a>
-                <a href="partners.html" data-i18n="nav.partners">Partners</a>
-                <a href="contact.html" data-i18n="nav.contact">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="vision.html">Vision</a>
+                <a href="mission.html">Mission</a>
+                <a href="humanitarian-action.html">Humanitarian Action</a>
+                <a href="manifesto.html">Manifesto</a>
+                <a href="projects.html">Projects</a>
+                <a href="volunteers.html">Volunteers</a>
+                <a href="academy.html">Academy</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="merchandise.html">Merchandise</a>
+                <a href="media-network.html">Media</a>
+                <a href="partners.html">Partners</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
-            </header>
+                </header>
     
     
 
