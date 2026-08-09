@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "vision": "Vizyon",
+    "mission": "Misyon",
+    "humanitarian": "İnsani Eylem",
+    "manifesto": "Manifesto",
+    "projects": "Projeler",
+    "volunteers": "Gönüllüler",
+    "academy": "Akademi",
+    "marketplace": "Pazaryeri",
+    "merchandise": "Mağaza",
+    "media": "Medya Ağı",
+    "partners": "Ortaklar",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Tek Dünya.<br>Ortak İnsanlığımız.<br>Umut Yaratmak İçin Milyonlarca Fırsat.",
+    "description": "İnsanlığın Yankıları; insanları, şefkati, bilgiyi ve teknolojiyi bir araya getirerek dünyadaki zorluklara kalıcı çözümler getiren küresel bir insani hareket.",
+    "join": "Harekete Katıl",
+    "explore": "Misyonumuzu Keşfet"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "description": "İnsanlığın Yankıları; küresel çabaları birleştirmeye, empatiyi güçlendirmeye ve dünya çapında sürdürülebilir insani çözümler üretmeye kendini adamıştır."
+  },
+  "vision": {
+    "title": "Vizyonumuz",
+    "description": "Şefkatin ayrılıkları yendiği ve ortak insanlığımızın sürdürülebilir bir geleceğe doğru her eyleme rehberlik ettiği, derinlemesine birbirine bağlı küresel bir topluluk inşa etmek."
+  },
+  "mission": {
+    "title": "Misyonumuz",
+    "description": "Daha insani ve adil bir dünya oluşturmak için her bireyi küresel kaynaklar, eğitim girişimleri ve iş birliğine dayalı teknolojiyle buluşturarak güçlendirmek."
+  }
+}
