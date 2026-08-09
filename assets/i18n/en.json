@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "vision": "Vision",
+    "mission": "Mission",
+    "humanitarian": "Humanitarian Action",
+    "manifesto": "Manifesto",
+    "projects": "Projects",
+    "volunteers": "Volunteers",
+    "academy": "Academy",
+    "marketplace": "Marketplace",
+    "merchandise": "Merchandise",
+    "media": "Media",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "One World.<br>One Shared Humanity.<br>Millions of Opportunities to Create Hope.",
+    "description": "Echoes of Humanity is a global humanitarian movement that connects people, compassion, knowledge, and technology to bring people together and bring lasting solutions to the world's challenges.",
+    "join": "Join the Movement",
+    "explore": "Explore Our Mission"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Echoes of Humanity is dedicated to uniting global efforts, fostering empathy, and driving sustainable humanitarian solutions worldwide."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "To build a deeply interconnected global community where compassion overcomes division, and shared humanity guides every action toward a sustainable future."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To empower every individual by connecting them with global resources, educational initiatives, and collaborative technology to foster a more humane and equitable world."
+  }
+}
+
