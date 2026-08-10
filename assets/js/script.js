@@ -59,4 +59,60 @@ function changeLanguage(lang) {
     }
     toggleLanguageMenu();
 }
+// Çeviri sözlüğü (İleride yeni diller ve metinler buraya eklenebilir)
+const translations = {
+    en: {
+        "nav.home": "Home",
+        "nav.about": "About",
+        "nav.vision": "Vision",
+        "nav.mission": "Mission",
+        "nav.humanitarian": "Humanitarian Action",
+        "nav.manifesto": "Manifesto",
+        "nav.projects": "Projects",
+        "nav.volunteers": "Volunteers",
+        "nav.academy": "Academy",
+        "nav.marketplace": "Marketplace",
+        "nav.merchandise": "Merchandise",
+        "nav.media": "Media",
+        "nav.partners": "Partners",
+        "nav.contact": "Contact"
+    },
+    tr: {
+        "nav.home": "Ana Sayfa",
+        "nav.about": "Hakkımızda",
+        "nav.vision": "Vizyon",
+        "nav.mission": "Misyon",
+        "nav.humanitarian": "İnsani Eylem",
+        "nav.manifesto": "Manifesto",
+        "nav.projects": "Projeler",
+        "nav.volunteers": "Gönüllüler",
+        "nav.academy": "Akademi",
+        "nav.marketplace": "Paryer / Pazar",
+        "nav.merchandise": "Mağaza",
+        "nav.media": "Medya",
+        "nav.partners": "Ortaklar",
+        "nav.contact": "İletişim"
+    }
+};
 
+// Dil değiştirme ana fonksiyonu
+function loadLanguage(lang) {
+    // Seçilen dili tarayıcı hafızasına (localStorage) kaydedelim ki sayfa yenilense de bozulmasın
+    localStorage.setItem('selectedLanguage', lang);
+    
+    // Sayfadaki data-i18n özniteliğine sahip tüm elementleri bul ve metinlerini güncelle
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+}
+
+// Sayfa yüklendiğinde hafızadaki dili aktif etme
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+    loadLanguage(savedLang);
+});
+                                           
